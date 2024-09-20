@@ -27,6 +27,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Deploy on Cloud:
+    - name: Deploy on Cloud
       if github.refs == 'refs/head/main'
       run: curl "https://api.render.com/deploy/srv-crmtt1rqf0us7387hv6g?key=1BReIG4gqA0"
